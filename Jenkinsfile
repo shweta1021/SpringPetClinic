@@ -13,11 +13,6 @@ pipeline{
             
             }
         }
-        stage('Deploy'){
-            steps{
-                sh 'java -jar /root/.jenkins/workspace/PetclinicDeclarativePipeline/target/*.jar'
-            }
-        }
     
         }
     }
