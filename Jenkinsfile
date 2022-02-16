@@ -26,7 +26,7 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh 'java -jar -Dserver.port=8081 jar_file_name'
+                sh 'java -jar -Dserver.port=8081 target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar'
             }
         }
     
