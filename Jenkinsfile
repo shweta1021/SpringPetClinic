@@ -24,11 +24,7 @@ pipeline{
             
             }
         }
-        stage('Deploy'){
-            steps{
-                sh 'java -jar -Dserver.port=9090 /root/.jenkins/workspace/PetClinic_pipeline/target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar'
-            }
-        }
+        
     
         }
     }
